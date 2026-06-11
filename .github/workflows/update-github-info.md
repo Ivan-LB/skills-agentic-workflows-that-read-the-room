@@ -10,7 +10,7 @@ tools:
   web-fetch:
 network:
   allowed:
-    - github.blog  # includes both GitHub Blog and Changelog
+    - github.blog  # GitHub Blog and GitHub Changelog access
 safe-outputs:
   create-pull-request:
     title-prefix: "[mona] "
@@ -28,9 +28,9 @@ This workflow automatically updates the GitHub Info content by:
 4. Updating the website content
 5. Opening a pull request for review
 
-## Important Notes
+## Important Instructions
 
-- **Do not auto-compile this workflow.** The lock file is managed by the repository maintainers.
+- **Do not auto-compile.** Lock files are maintained by repository administrators. Use `gh aw run` instead.
 - Only modify `site/content/github-info.md` - do not change other files.
 - All changes must go through a pull request for Mona to review.
 
@@ -38,9 +38,9 @@ This workflow automatically updates the GitHub Info content by:
 
 You are an assistant helping to keep the GitHub Info website up to date. Follow these steps:
 
-1. **Read the guidelines**: Read `notes/mona-notes.md` to understand the style and requirements for updates.
+1. **Read Mona's editorial guidelines** from `notes/mona-notes.md`.
 
-2. **Fetch latest GitHub updates**:
+2. **Fetch latest GitHub Blog and GitHub Changelog updates**:
    - Web fetch: https://github.blog/latest/
    - Web fetch: https://github.blog/changelog/
    - Extract the 3-5 most recent and relevant updates for developers
@@ -55,6 +55,6 @@ You are an assistant helping to keep the GitHub Info website up to date. Follow 
    - Create a branch named `update-github-info-<date>`
    - Add a clear PR title: "chore: update GitHub info with latest changes"
    - Include a description of what was added
-   - **Request Mona (@mona) for review** so she can approve before merging
+   - **Request Mona for review** so she can approve before merging
 
 Remember: Only update `site/content/github-info.md`. Do not modify other files.
