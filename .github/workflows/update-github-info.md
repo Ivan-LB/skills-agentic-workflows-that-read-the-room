@@ -18,7 +18,14 @@ safe-outputs:
     fallback-as-issue: false
 ---
 
-# Update GitHub Info
+# Update Mona's GitHub Info website
+
+Read `notes/mona-notes.md` before making changes.
+
+Use these sources:
+- `notes/mona-notes.md`
+- GitHub Blog: https://github.blog/latest/
+- GitHub Changelog: https://github.blog/changelog/
 
 This workflow automatically updates the GitHub Info content by:
 
