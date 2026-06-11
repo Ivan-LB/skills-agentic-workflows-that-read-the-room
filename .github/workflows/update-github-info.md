@@ -9,8 +9,9 @@ tools:
   edit:
   web-fetch:
 network:
-  allowed:
-    - github.blog  # GitHub Blog and GitHub Changelog access
+    allowed:
+        - github.com
+        - github.blog
 safe-outputs:
   create-pull-request:
     title-prefix: "[mona] "
