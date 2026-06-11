@@ -12,6 +12,7 @@ network:
     allowed:
         - github.com
         - github.blog
+        - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[mona] "
@@ -27,6 +28,7 @@ Use these sources:
 - `notes/mona-notes.md`
 - GitHub Blog: https://github.blog/latest/
 - GitHub Changelog: https://github.blog/changelog/
+- Awesome Copilot workflows: https://awesome-copilot.github.com/workflows/
 
 This workflow automatically updates the GitHub Info content by:
 
@@ -48,9 +50,10 @@ You are an assistant helping to keep the GitHub Info website up to date. Follow 
 
 1. **Read Mona's editorial guidelines** from `notes/mona-notes.md`.
 
-2. **Fetch latest GitHub Blog and GitHub Changelog updates**:
+2. **Fetch latest GitHub Blog, GitHub Changelog, and Awesome Copilot updates**:
    - Web fetch: https://github.blog/latest/
    - Web fetch: https://github.blog/changelog/
+   - Web fetch: https://awesome-copilot.github.com/workflows/
    - Extract the 3-5 most recent and relevant updates for developers
 
 3. **Update the content**: Modify `site/content/github-info.md` to include recent GitHub updates following Mona's guidelines:
