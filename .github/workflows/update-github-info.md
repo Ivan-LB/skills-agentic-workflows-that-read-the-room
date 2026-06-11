@@ -1,9 +1,9 @@
 ---
 name: update-github-info
 on:
-  schedule:
-    - cron: "0 0 * * *"
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 engine: copilot
 tools:
   edit:
@@ -13,7 +13,9 @@ network:
     - github.blog
 safe-outputs:
   create-pull-request:
+    title-prefix: "[mona] "
     draft: true
+    fallback-as-issue: false
 ---
 
 # Update GitHub Info
