@@ -4,7 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
-engine: copilot
+engine:
+  id: copilot
+  model: claude-haiku-4.5
 tools:
   edit:
   web-fetch:
